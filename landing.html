@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANILOKO</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* HERO con fondo suave */
+        .hero {
+            background: linear-gradient(to right, #3c2e7e, #c605f2);
+            color: rgb(249, 253, 254);
+            padding: 120px 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        /* Cards modernas */
+        .service-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            height: 280px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        /* Títulos */
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        /* Footer moderno */
+        footer {
+            background: #111;
+            color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="#">GRANILOKO</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sabores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Bienvenido a GRANILOKO</h1>
+            <p class="lead mt-3">Los mejores granizados explosivos de sabor</p>
+            <a href="#" class="btn btn-light btn-lg mt-3">Conoce más</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SABORES -->
+    <section class="container my-5">
+        <h2 class="text-center section-title">Nuestros Sabores</h2>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card service-card">
+                    <img src="https://www.granizados1964.com/wp-content/uploads/2021/10/FZJE9906-1.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Graniloko Fresa</h5>
+                        <p class="card-text">Una mezcla explosiva con dulce, ácido y mucho color.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card service-card">
+                    <img src="https://images.rappi.com/products/1700066583434_1700066581947_1700066571612.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Graniloko Mango Biche</h5>
+                        <p class="card-text">Perfecto para los amantes del ácido y el picante.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqGLsSC_WFMlonDvPMZUqoZluG1bZutf6lhlX33SZ2l4hMDbRr0wgujZ_LLQlkaaK4yA&usqp=CAU">
+                    <div class="card-body">
+                        <h5 class="card-title">Graniloko Especial</h5>
+                        <p class="card-text">El sabor estrella cargado de gomitas, salsa y más.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 mt-5">
+        © 2025 GRANILOKO — Todos los derechos reservados.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
