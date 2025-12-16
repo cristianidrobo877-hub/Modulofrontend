@@ -1,61 +1,58 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== FONDO ===== */
 body {
-  background: #e3e3e3;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  font-family: Arial, sans-serif;
+  align-items: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
+/* ===== CALCULADORA ===== */
 .calculator {
-  width: 300px;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+  width: 320px;
+  background: #020617;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
+/* ===== PANTALLA ===== */
 .screen {
-  background: #c7f5c7;
-  color: #000;
-  padding: 15px;
-  font-size: 28px;
+  background: linear-gradient(145deg, #16a34a, #22c55e);
+  color: #022c22;
+  padding: 18px;
+  font-size: 32px;
+  font-weight: 600;
   text-align: right;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  height: 50px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
+/* ===== BOTONES ===== */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
 button {
-  padding: 18px;
+  padding: 20px;
   font-size: 20px;
+  font-weight: 500;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background: #3a3a3a;
-  color: white;
-  transition: 0.2s;
-}
-
-button:hover {
-  background: #505050;
-}
-
-.clear {
-  background: #b91c1c;
-}
-
-.equal {
-  background: #1d4ed8;
-  grid-row: span 2;
-}
-
-.zero {
-  grid-column: span 2;
-}
+  border-radius: 14px;
+  cursor: po
