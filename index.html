@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,4 +10,79 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+=======
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cristian stiven</h1>
+    <p>Desarrollador Frontend en formación </p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estudiante de desarrollo web y estoy aprendiendo a construir sitios modernos y atractivos
+        utilizando <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.
+      </p>
+    </section>
+
+    <section class="tech">
+      <h2>Tecnologías</h2>
+      <div class="tech-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Proyectos</h2>
+      <div class="project">
+        <h3>Mi Primera Página</h3>
+        <p>Un sitio web simple con HTML y CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Diseño Responsivo</h3>
+        <p>Práctica de maquetación adaptable para móviles y escritorio.</p>
+      </div>
+    </section>
+
+    <section class="download">
+      <h2>Repositorio</h2>
+      <p>Puedes ver mi código en GitHub o descargar el enlace:</p>
+      <div class="buttons">
+        <a href="https://github.com/cristianidrobo877-hub/Modulofrontend" target="_blank">Ver en GitHub</a>
+        <button id="descargar">Descargar enlace</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 cristian carabali — Portafolio Frontend</p>
+  </footer>
+
+  <script>
+    document.getElementById("descargar").addEventListener("click", () => {
+      const enlace = "https://github.com/cristianidrobo877-hub/Modulofrontend"; 
+      const contenido = `# Enlace al repositorio\\n\\nRepositorio: ${enlace}\\n\\n-- Documento generado desde el portafolio.`;
+      const blob = new Blob([contenido], { type: "text/markdown" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "ENLACE_REPOSITORIO.md";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+>>>>>>> 5aa1b4f635c426c55285ef5b2c44482ad5199415
 </html>
